@@ -24,8 +24,7 @@ const Home = () => {
               <h5 className="text-1xl text-gray-100 font-syne tracking-widest leading-1 font-bold" alt="bio" style={{ marginTop: 50 }}>
                 Hello, I’m a Mobile Application Developer,
                 specializing in Android Development but
-                i’ve worked with Cross-platform tools. <br />
-                I like learning new things but I also like breaks :)
+                i’ve also worked with Cross-platform tools. <br />
               </h5>
               <div className="py-20 grid grid-cols-4 gap-4 md:gap-8 lg:gap-12 mx-auto">
                 <a href="https://www.linkedin.com/in/matteo-macr%C3%AD-997060193/" target="_blank">
