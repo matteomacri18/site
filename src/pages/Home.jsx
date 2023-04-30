@@ -25,7 +25,6 @@ const Home = () => {
                 Hello, I’m a Mobile Application Developer,
                 specializing in Android Development but
                 i’ve also worked with Cross-platform tools. <br />
-                I like learning new things but I also like breaks :)
               </h5>
               <div className="py-20 grid grid-cols-4 gap-4 md:gap-8 lg:gap-12 mx-auto">
                 <a href="https://www.linkedin.com/in/matteo-macr%C3%AD-997060193/" target="_blank">
