@@ -12,6 +12,11 @@ const TRAKING_ID = "G-X2SJDWTRTV";
 ReactGA.initialize(TRAKING_ID);
 
 function App() {
+
+  React.useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
   return (
     <Routes>
       <Route exact path="/" element={<Home />} />
