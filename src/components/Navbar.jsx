@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import logo from '../assets/logo.png'
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
@@ -36,7 +37,7 @@ const Navbar = () => {
               <div className="flex space-x-4">
                 {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
                 <Link to={'/'}>
-                  <p className="text-gray-100 hover:text-[#999999] block rounded-md px-3 py-2 font-syne tracking-widest leading-1 font-bold">M</p>
+                  <img className="mx-auto" src={logo} style={{ width: 30, paddingTop: 6 }} />
                 </Link>
                 <Link to={'/about'}>
                   <p className="text-gray-100 hover:text-[#999999] block rounded-md px-5 py-2 font-syne tracking-widest leading-1 font-bold whitespace-nowrap">ABOUT ME</p>
