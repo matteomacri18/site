@@ -6,6 +6,10 @@ import Posts from "./pages/Posts";
 import Projects from "./pages/Projects";
 import Courses from "./pages/Courses";
 import Contacts from "./pages/Contacts";
+import ReactGA from 'react-ga';
+
+const TRAKING_ID = "G-X2SJDWTRTV";
+ReactGA.initialize(TRAKING_ID);
 
 function App() {
   return (
