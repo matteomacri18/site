@@ -39,6 +39,7 @@ function App() {
         <Route exact path="/courses" element={<Courses />} />
         <Route exact path="/contacts" element={<Contacts />} />
         <Route exact path="/policy" element={<Policy />} />
+        <Route exact path="/policy-cookie" element={<Policy />} />
       </Routes>
     </>
   );
