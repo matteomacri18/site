@@ -1,14 +1,30 @@
 import React from 'react';
+import { useNavigate, Link } from "react-router-dom";
 
 const Footer = () => {
   const current = new Date();
 
   return (
-    <div className='bg-dark mx-auto text-center bottom-0'>
-      {/* <p className="text-gray-100 font-syne tracking-widest leading-1 font-bold" alt="Matteo Macri" style={{ fontSize: 11 }}>MATTEO MACRI'</p>
-      <p className="text-gray-100 font-syne tracking-widest leading-1 font-bold" alt="SWE" style={{ fontSize: 9 }}>SOFTWARE ENGINEER</p> */}
-      <p className="text-gray-500" alt="RIGHTS" style={{ paddingTop: 100, marginBottom: 30, fontSize: 12 }}>
-        © {current.getFullYear()} Matteo Macri. All Rights Reserved.</p>
+    <div className='pt-44'>
+      <footer className="bg-dark rounded-lg shadow m-4">
+        <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+          <span className="text-sm text-gray-600 sm:text-center">© {current.getFullYear()}
+            <a href="https://flowbite.com/" className="hover:underline"> Matteo Macri</a>. All Rights Reserved.
+          </span>
+          <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+            <li>
+              <Link to={'/policy'}>
+                <p className="mr-4 hover:underline md:mr-6">Privacy Policy</p>
+              </Link>
+            </li>
+            <li>
+              <Link to={'/policy'}>
+                <p className="mr-4 hover:underline md:mr-6">Cookie Policy</p>
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </div>
   )
 }

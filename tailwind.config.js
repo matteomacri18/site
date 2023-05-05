@@ -20,7 +20,8 @@ module.exports = {
     },
     extend: {
       color: {
-        'dark': '#1c1c1c'
+        'dark': '#1c1c1c',
+        'gray': '#374151'
       }
     },
     fontFamily: {
