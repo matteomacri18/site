@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 import emailjs from '@emailjs/browser';
 import Alert from '../components/Alert';
 
-const TRAKING_ID = "G-X2SJDWTRTV";
+const TRAKING_ID = process.env.REACT_APP_GOOGLE_AN;
 ReactGA.initialize(TRAKING_ID);
 
 const Contacts = () => {
