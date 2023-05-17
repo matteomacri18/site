@@ -20,7 +20,11 @@ const Contacts = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(process.env.SERVICE, process.env.TEMPLATE, form.current, process.env.PUBLIC_KEY)
+    emailjs.sendForm(
+      process.env.REACT_APP_SERVICE, 
+      process.env.REACT_APP_TEMPLATE, 
+      form.current, 
+      process.env.REACT_APP_PUBLIC_KEY)
       .then((result) => {
         console.log(result.text);
         //clear form
