@@ -3,7 +3,7 @@ import React from 'react';
 const Card = (props) => {
   return (
     <div class="relative flex flex-col overflow-hidden rounded-xl bg-gray-100 bg-clip-border text-gray-700 shadow-md">
-      <a href={props.link}>
+      <a href={props.link} target='_blank'>
         <div class="relative m-0 overflow-hidden rounded-none bg-transparent bg-clip-border text-gray-700 shadow-none">
           <img src={props.image} />
         </div>
