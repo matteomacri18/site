@@ -39,9 +39,9 @@ const Navbar = () => {
                 <Link to={'/'}>
                   <img className="mx-auto" src={logo} style={{ width: 30, paddingTop: 6 }} />
                 </Link>
-                <Link to={'/about'}>
+                {/* <Link to={'/about'}>
                   <p className="text-gray-100 hover:text-[#999999] block rounded-md px-5 py-2 font-syne tracking-widest leading-1 font-bold whitespace-nowrap">ABOUT ME</p>
-                </Link>
+                </Link> */}
                 <Link to={'/posts'}>
                   <p className="text-gray-100 hover:text-[#999999] rounded-md px-5 py-2 font-syne tracking-widest leading-1 font-bold">POSTS</p>
                 </Link>
@@ -63,9 +63,9 @@ const Navbar = () => {
       <div className={isMobileMenuOpen ? 'sm:hidden block' : 'hidden sm:hidden'} id="mobile-menu">
         <div className="space-y-1 px-2 pb-3 pt-2">
           {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
-          <Link to={'/about'}>
+          {/* <Link to={'/about'}>
             <p className="text-gray-100 hover:text-[#999999] block rounded-md px-5 py-2 font-syne tracking-widest leading-1 font-bold" aria-current="page">ABOUT ME</p>
-          </Link>
+          </Link> */}
           <Link to={'/posts'}>
             <p className="text-gray-100 hover:text-[#999999] rounded-md px-5 py-2 font-syne tracking-widest leading-1 font-bold">POSTS</p>
           </Link>
